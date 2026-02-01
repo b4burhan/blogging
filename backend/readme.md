@@ -201,3 +201,7 @@ The Django backend is now fully functional with:
 # Create virtual environment
 python -m venv venv
 venv\Scripts\activate
+
+
+admin@lumina.com
+password
