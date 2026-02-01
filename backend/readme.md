@@ -202,6 +202,9 @@ The Django backend is now fully functional with:
 python -m venv venv
 venv\Scripts\activate
 
+python manage.py runserver
+
+npm run dev
 
 admin@lumina.com
 password

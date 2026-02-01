@@ -5,6 +5,7 @@ import type { ProductCategory, Product, ProductReview, ApiResponse } from '@/typ
 export const shopApi = {
   // Categories
   getCategories: async (): Promise<ProductCategory[]> => {
+    console.log("getCategories called")
     const response = await api.get('/shop/categories/')
     console.log("Categories response:", response.data)
     return response.data

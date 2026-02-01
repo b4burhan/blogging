@@ -29,7 +29,7 @@ class BlogPostListView(generics.ListAPIView):
     
     def get_queryset(self):
         queryset = BlogPost.objects.filter(status='published').annotate(
-            comment_count=Count('comments', filter=Q(comments__is_approved=True))
+            # comment_count=Count('comments', filter=Q(comments__is_approved=True))
         )
         
         # Filter by category slug
@@ -50,7 +50,7 @@ class FeaturedPostListView(generics.ListAPIView):
             status='published', 
             is_featured=True
         ).annotate(
-            comment_count=Count('comments', filter=Q(comments__is_approved=True))
+            # comment_count=Count('comments', filter=Q(comments__is_approved=True))
         ).select_related('category', 'author')[:6]
 
 

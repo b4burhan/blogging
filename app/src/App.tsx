@@ -16,6 +16,7 @@ import PrivacyPage from './pages/PrivacyPage'
 import TermsPage from './pages/TermsPage'
 import ShippingPage from './pages/ShippingPage'
 import FAQPage from './pages/FAQPage'
+import TestApiPage from './pages/TestApiPage'
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
           <Route path="/terms" element={<TermsPage />} />
           <Route path="/shipping" element={<ShippingPage />} />
           <Route path="/faq" element={<FAQPage />} />
+          <Route path="/test-api" element={<TestApiPage />} />
         </Routes>
       </div>
     </CartProvider>
